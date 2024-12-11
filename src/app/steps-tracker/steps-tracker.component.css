@@ -1,0 +1,55 @@
+.steps-tracker {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #e1f5fe;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .steps-tracker h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  .steps-details {
+    margin-bottom: 15px;
+  }
+  
+  .steps-details label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .steps-details input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #03a9f4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #039be5;
+  }
+  
+  .steps-summary {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #333;
+  }
+  

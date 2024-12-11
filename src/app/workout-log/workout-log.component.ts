@@ -4,7 +4,7 @@ import { FitnessDataService } from '../shared/fitness-data.service';
 @Component({
   selector: 'app-workout-log',
   templateUrl: './workout-log.component.html',
-  styleUrls: ['./workout-log.component.scss']
+  styleUrls: ['./workout-log.component.css']
 })
 export class WorkoutLogComponent implements OnInit {
   workouts: any[] = [];
