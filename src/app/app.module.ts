@@ -7,6 +7,9 @@ import { WorkoutLogComponent } from './workout-log/workout-log.component';
 import { StepsTrackerComponent } from './steps-tracker/steps-tracker.component';
 import { CalorieTrackerComponent } from './calorie-tracker/calorie-tracker.component';
 import { ProgressComponent } from './progress/progress.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { ProgressComponent } from './progress/progress.component';
     WorkoutLogComponent,
     StepsTrackerComponent,
     CalorieTrackerComponent,
-    ProgressComponent
+    ProgressComponent,
+    HeaderComponent,
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

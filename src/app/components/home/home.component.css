@@ -1,0 +1,36 @@
+.component-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .option-card {
+    text-align: center;
+    width: 200px; /* You can adjust this size based on your preference */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .option-card img {
+    width: 100%; /* Ensure it fills the container's width */
+    height: 100%; /* Ensure it fills the container's height */
+    object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    margin-bottom: 10px;
+    aspect-ratio: 1; /* Ensures the image is square */
+  }
+  
+  .option-card a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px; /* Adjust space below the heading */
+  }
+  
