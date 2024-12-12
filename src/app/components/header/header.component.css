@@ -1,9 +1,8 @@
-/* Header Styles */
 .header-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000; /* Black background */
+  background-color: #000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px 0;
 }
@@ -19,14 +18,14 @@
 .logo h1 {
   font-size: 36px;
   font-weight: bold;
-  color: #fff; /* White text */
+  color: #fff; 
   margin: 0;
 }
 
 .user-info p {
   font-size: 18px;
   font-weight: 500;
-  color: #fff; /* White text */
+  color: #fff; 
 }
 
 @media (max-width: 768px) {

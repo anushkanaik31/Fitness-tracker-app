@@ -21,7 +21,7 @@ export class WorkoutLogComponent {
         intensity: this.workoutIntensity,
       });
 
-      this.showPopup(); // Show the popup
+      this.showPopup();
       
       this.workoutType = '';
       this.workoutDuration = null;
@@ -32,12 +32,10 @@ export class WorkoutLogComponent {
   }
 
   showPopup() {
-    // Show the popup
     this.workoutLoggedPopup.nativeElement.style.display = 'flex';
   }
 
   closePopup() {
-    // Hide the popup
     this.workoutLoggedPopup.nativeElement.style.display = 'none';
   }
 }

@@ -1,35 +1,92 @@
-/* progress.component.css */
-.container {
+.progress-container {
   max-width: 600px;
   margin: 20px auto;
   padding: 30px;
-  background: linear-gradient(135deg, #1a1a1a, #333);
+  background: #fff;
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  text-align: center;
 }
 
 h2 {
-  color: #e0e0e0;
-  text-align: center;
-  font-size: 24px;
+  color: #000;
+  font-size: 28px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.description {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+
+.progress-chart {
+  margin-bottom: 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.chart-text {
+  color: #888;
+  font-style: italic;
+}
+
+.progress-summary {
+  margin-bottom: 30px;
+}
+
+.progress-summary p {
+  font-size: 18px;
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.progress-summary span {
+  font-weight: bold;
+  color: #00bcd4;
 }
 
 button {
   width: 100%;
   padding: 15px;
   margin: 10px 0;
-  border: 2px solid #444;
-  background-color: transparent;
-  color: white;
+  border: 2px solid #00bcd4;
+  background-color: #00bcd4;
+  color: #fff;
   border-radius: 10px;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
   background-color: #0097a7;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.progress-bar-container {
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #00bcd4;
+  border-radius: 10px;
+  transition: width 0.3s ease;
 }

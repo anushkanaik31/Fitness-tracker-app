@@ -1,4 +1,3 @@
-/* Container that wraps the whole form */
 .workout-log-container {
   max-width: 700px;
   margin: 20px auto;
@@ -10,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Make the container take full viewport height */
+  height: 100vh;
 }
 
 .workout-log-container:hover {
@@ -18,14 +17,13 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Card container that holds the content */
 .card-container {
   background: linear-gradient(135deg, #1a1a1a, #333);
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   display: flex;
-  flex-direction: column; /* Stack the form items vertically */
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
 }
@@ -45,19 +43,17 @@
   margin-bottom: 30px;
 }
 
-/* Form container */
 .log-entry-form {
   background: white;
   padding: 20px;
   border-radius: 10px;
   width: 100%;
-  max-width: 500px; /* Limit form width */
+  max-width: 500px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center the form items */
+  align-items: center; 
 }
 
-/* Styling for label */
 label {
   color: black;
   font-size: 18px;
@@ -68,7 +64,6 @@ label {
   width: 100%;
 }
 
-/* Styling for input, select, and button */
 input, select, button {
   width: 100%;
   padding: 15px;
@@ -83,13 +78,11 @@ input, select, button {
   box-sizing: border-box;
 }
 
-/* Focus effect for input and select */
 input:focus, select:focus {
   border-color: #00bcd4;
   outline: none;
 }
 
-/* Styling for select box */
 select {
   background-color: white;
 }
@@ -104,7 +97,6 @@ select option:hover {
   background-color: #00bcd4;
 }
 
-/* Styling for button */
 button {
   background-color: #00bcd4;
   color: white;
@@ -113,15 +105,13 @@ button {
   border: none;
   margin-top: 20px;
   width: auto;
-  max-width: 500px; /* Control max width of the button */
+  max-width: 500px; 
 }
 
-/* Hover effect for button */
 button:hover {
   background-color: #0097a7;
 }
 
-/* Ensure the same styling for both the workout type and intensity dropdowns */
 select#workout-name, select#workout-intensity {
   background-color: white;
   color: #444;
@@ -140,27 +130,24 @@ select#workout-intensity:focus {
   outline: none;
 }
 
-/* Hover effect for select options */
 select#workout-name option:hover, 
 select#workout-intensity option:hover {
   background-color: #00bcd4;
 }
 
-/* Popup container */
 .workout-logged-popup {
-  display: none; /* Initially hidden */
+  display: none; 
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.7); 
   justify-content: center;
   align-items: center;
-  z-index: 9999; /* Ensure it's above other content */
+  z-index: 9999; 
 }
 
-/* Popup content */
 .popup-content {
   background: linear-gradient(135deg, #1a1a1a, #333);
   padding: 30px;
@@ -196,6 +183,3 @@ select#workout-intensity option:hover {
 .popup-content button:hover {
   background-color: #0097a7;
 }
-
-
-

@@ -1,15 +1,14 @@
 <div class="steps-tracker-container">
   <h2>Steps Tracker</h2>
   <p>Keep track of your daily steps and achieve your fitness goals.</p>
-  
+
   <div class="step-counter">
     <p>Total Steps: <span>{{ totalSteps }}</span></p>
     <button (click)="addSteps()">Add 100 Steps</button>
   </div>
-  
+
   <div class="progress-bar">
     <div class="progress" [style.width]="progressPercentage + '%'"></div>
   </div>
-  
+
   <p>Goal: 10,000 steps</p>
-</div>

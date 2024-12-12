@@ -1,14 +1,18 @@
 <div class="progress-container">
   <h2>Progress Tracker</h2>
-  <p>Monitor your progress and track your fitness goals.</p>
+  <p class="description">Monitor your progress and track your fitness goals.</p>
   
   <div class="progress-chart">
-    <!-- Here, you can include a chart library to display progress visually -->
-    <p>Chart will go here (e.g., using a chart library like Chart.js)</p>
+    <div class="progress-bar-container">
+      <div class="progress-bar" [style.width]="(currentProgress / workoutGoal) * 100 + '%'"></div>
+    </div>
+    <p class="chart-text">Current Progress Bar</p>
   </div>
   
   <div class="progress-summary">
-    <p>Workout Goal: <span>{{ workoutGoal }}</span></p>
-    <p>Current Progress: <span>{{ currentProgress }}</span></p>
+    <p>Workout Goal: <span>{{ workoutGoal }} workouts</span></p>
+    <p>Current Progress: <span>{{ currentProgress }} workouts</span></p>
   </div>
+
+  <button (click)="incrementProgress()">Update Progress</button>
 </div>

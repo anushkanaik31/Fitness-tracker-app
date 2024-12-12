@@ -12,14 +12,14 @@ export class CalorieTrackerComponent {
   calorieGoal: number = 2000;
 
   addCalorie() {
-    if (this.foodItem && this.calories) {
+    if (this.foodItem.trim() !== '' && this.calories != null && this.calories > 0) {
       this.totalCalories += this.calories;
       console.log('Calories Added:', {
         food: this.foodItem,
         calories: this.calories
       });
       alert('Calorie Added!');
-      // Reset form
+      
       this.foodItem = '';
       this.calories = null;
     } else {

@@ -11,14 +11,14 @@ export class StepsTrackerComponent {
   progressPercentage: number = 0;
 
   addSteps() {
-    this.totalSteps += 100;  // Adding 100 steps each time
+    this.totalSteps += 100;  
     this.updateProgress();
   }
 
   updateProgress() {
-    this.progressPercentage = (this.totalSteps / this.goalSteps) * 100;
+    this.progressPercentage = (this.totalSteps / this.goalSteps) * 1000;
     if (this.totalSteps > this.goalSteps) {
-      this.totalSteps = this.goalSteps;  // Cap the total steps at goal
+      this.totalSteps = this.goalSteps; 
       this.progressPercentage = 100;
     }
   }
