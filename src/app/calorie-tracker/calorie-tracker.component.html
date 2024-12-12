@@ -1,12 +1,19 @@
-<div class="calorie-tracker">
-    <h2>Calorie Tracker</h2>
-    <div class="calorie-details">
-      <label for="calories-intake">Calories Intake</label>
-      <input id="calories-intake" type="number" placeholder="Enter calories">
-    </div>
-    <div class="calorie-details">
-      <label for="calories-burned">Calories Burned</label>
-      <input id="calories-burned" type="number" placeholder="Enter calories burned">
-    </div>
-    <button class="submit-btn">Track Calories</button>
-  </div>  
+<div class="calorie-tracker-container">
+  <h2>Calorie Tracker</h2>
+  <p>Track your calorie intake and stay on top of your diet.</p>
+  
+  <div class="calorie-entry">
+    <label for="food-item">Food Item:</label>
+    <input type="text" id="food-item" placeholder="Enter food item" />
+
+    <label for="calories">Calories:</label>
+    <input type="number" id="calories" placeholder="Enter calories" />
+
+    <button (click)="addCalorie()">Add Calorie</button>
+  </div>
+  
+  <div class="calorie-summary">
+    <p>Total Calories: <span>{{ totalCalories }}</span></p>
+    <p>Goal: 2000 calories</p>
+  </div>
+</div>

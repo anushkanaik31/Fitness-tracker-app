@@ -1,17 +1,29 @@
-import { Component, OnInit } from '@angular/core';
-import { FitnessDataService } from '../shared/fitness-data.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-calorie-tracker',
   templateUrl: './calorie-tracker.component.html',
   styleUrls: ['./calorie-tracker.component.css']
 })
-export class CalorieTrackerComponent implements OnInit {
-  calories: any[] = [];
+export class CalorieTrackerComponent {
+  foodItem: string = '';
+  calories: number | null = null;
+  totalCalories: number = 0;
+  calorieGoal: number = 2000;
 
-  constructor(private fitnessDataService: FitnessDataService) {}
-
-  ngOnInit(): void {
-    this.calories = this.fitnessDataService.getCalories();
+  addCalorie() {
+    if (this.foodItem && this.calories) {
+      this.totalCalories += this.calories;
+      console.log('Calories Added:', {
+        food: this.foodItem,
+        calories: this.calories
+      });
+      alert('Calorie Added!');
+      // Reset form
+      this.foodItem = '';
+      this.calories = null;
+    } else {
+      alert('Please fill in all fields!');
+    }
   }
 }

@@ -44,5 +44,20 @@ footer {
     font-size: 14px;
   }
 }
+footer {
+  position: relative;
+  width: 100%;
+  background-color: #000; /* Set background color */
+  color: #fff; /* Set text color */
+  padding: 20px;
+  text-align: center;
+  bottom: 0;
+  /* Ensure footer stays at the bottom */
+}
+
+.home-container {
+  margin-bottom: 60px; /* Make space for the footer */
+}
+
 
   

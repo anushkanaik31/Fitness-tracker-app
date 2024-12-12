@@ -1,14 +1,15 @@
 <div class="hero-section">
   <div class="image-container">
-    <img *ngFor="let image of images; let i = index" 
-         [src]="image" 
-         alt="Fitness Journey" 
-         class="hero-image" 
-         [ngClass]="{ 'active': currentImageIndex === i }" />
+    <img *ngFor="let slide of slides; let i = index"
+         [src]="slide.image"
+         alt="Fitness Journey"
+         class="hero-image"
+         [ngClass]="{ 'active': currentSlideIndex === i }"
+         (click)="changeSlide(i)" />
   </div>
   <div class="quote-overlay">
-    <h1>{{ currentQuote }}</h1>
-    <p>{{ currentQuoteText }}</p>
+    <h1>{{ slides[currentSlideIndex].quote }}</h1>
+    <p>{{ slides[currentSlideIndex].text }}</p>
   </div>
 </div>
 

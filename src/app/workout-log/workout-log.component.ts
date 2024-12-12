@@ -1,17 +1,43 @@
-import { Component, OnInit } from '@angular/core';
-import { FitnessDataService } from '../shared/fitness-data.service';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-workout-log',
   templateUrl: './workout-log.component.html',
   styleUrls: ['./workout-log.component.css']
 })
-export class WorkoutLogComponent implements OnInit {
-  workouts: any[] = [];
+export class WorkoutLogComponent {
+  @ViewChild('workoutLoggedPopup') workoutLoggedPopup!: ElementRef;
+  @ViewChild('closePopupBtn') closePopupButton!: ElementRef;
 
-  constructor(private fitnessDataService: FitnessDataService) {}
+  workoutType: string = '';
+  workoutDuration: number | null = null;
+  workoutIntensity: string = '';
 
-  ngOnInit(): void {
-    this.workouts = this.fitnessDataService.getWorkouts();
+  logWorkout() {
+    if (this.workoutType && this.workoutDuration && this.workoutIntensity) {
+      console.log('Workout Logged:', {
+        name: this.workoutType,
+        duration: this.workoutDuration,
+        intensity: this.workoutIntensity,
+      });
+
+      this.showPopup(); // Show the popup
+      
+      this.workoutType = '';
+      this.workoutDuration = null;
+      this.workoutIntensity = '';
+    } else {
+      alert('Please fill in all fields!');
+    }
+  }
+
+  showPopup() {
+    // Show the popup
+    this.workoutLoggedPopup.nativeElement.style.display = 'flex';
+  }
+
+  closePopup() {
+    // Hide the popup
+    this.workoutLoggedPopup.nativeElement.style.display = 'none';
   }
 }

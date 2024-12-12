@@ -1,88 +1,14 @@
 <div class="progress-container">
-    <h2>Fitness Progress</h2>
+  <h2>Progress Tracker</h2>
+  <p>Monitor your progress and track your fitness goals.</p>
   
-    <!-- Daily Progress -->
-    <div class="progress-section">
-      <h3>Daily Progress</h3>
-      <div class="progress-cards">
-        <div class="progress-card">
-          <h4>Steps Completed</h4>
-          <div class="progress-bar">
-            <div class="progress" [style.width]="stepsProgress + '%'"></div>
-          </div>
-          <p>{{ stepsCompleted }} / {{ stepsGoal }} steps</p>
-        </div>
-        <div class="progress-card">
-          <h4>Calories Burned</h4>
-          <div class="progress-bar">
-            <div class="progress" [style.width]="caloriesProgress + '%'"></div>
-          </div>
-          <p>{{ caloriesBurned }} / {{ caloriesGoal }} kcal</p>
-        </div>
-        <div class="progress-card">
-          <h4>Workout Sessions</h4>
-          <div class="progress-bar">
-            <div class="progress" [style.width]="workoutsProgress + '%'"></div>
-          </div>
-          <p>{{ workoutsCompleted }} / {{ workoutsGoal }} sessions</p>
-        </div>
-      </div>
-    </div>
-  
-    <!-- Weekly Progress -->
-    <div class="progress-section">
-      <h3>Weekly Progress</h3>
-      <div class="progress-cards">
-        <div class="progress-card">
-          <h4>Steps Completed</h4>
-          <div class="progress-bar">
-            <div class="progress" [style.width]="weeklyStepsProgress + '%'"></div>
-          </div>
-          <p>{{ weeklyStepsCompleted }} / {{ weeklyStepsGoal }} steps</p>
-        </div>
-        <div class="progress-card">
-          <h4>Calories Burned</h4>
-          <div class="progress-bar">
-            <div class="progress" [style.width]="weeklyCaloriesProgress + '%'"></div>
-          </div>
-          <p>{{ weeklyCaloriesBurned }} / {{ weeklyCaloriesGoal }} kcal</p>
-        </div>
-        <div class="progress-card">
-          <h4>Workout Sessions</h4>
-          <div class="progress-bar">
-            <div class="progress" [style.width]="weeklyWorkoutsProgress + '%'"></div>
-          </div>
-          <p>{{ weeklyWorkoutsCompleted }} / {{ weeklyWorkoutsGoal }} sessions</p>
-        </div>
-      </div>
-    </div>
-  
-    <!-- Monthly Progress -->
-    <div class="progress-section">
-      <h3>Monthly Progress</h3>
-      <div class="progress-cards">
-        <div class="progress-card">
-          <h4>Steps Completed</h4>
-          <div class="progress-bar">
-            <div class="progress" [style.width]="monthlyStepsProgress + '%'"></div>
-          </div>
-          <p>{{ monthlyStepsCompleted }} / {{ monthlyStepsGoal }} steps</p>
-        </div>
-        <div class="progress-card">
-          <h4>Calories Burned</h4>
-          <div class="progress-bar">
-            <div class="progress" [style.width]="monthlyCaloriesProgress + '%'"></div>
-          </div>
-          <p>{{ monthlyCaloriesBurned }} / {{ monthlyCaloriesGoal }} kcal</p>
-        </div>
-        <div class="progress-card">
-          <h4>Workout Sessions</h4>
-          <div class="progress-bar">
-            <div class="progress" [style.width]="monthlyWorkoutsProgress + '%'"></div>
-          </div>
-          <p>{{ monthlyWorkoutsCompleted }} / {{ monthlyWorkoutsGoal }} sessions</p>
-        </div>
-      </div>
-    </div>
+  <div class="progress-chart">
+    <!-- Here, you can include a chart library to display progress visually -->
+    <p>Chart will go here (e.g., using a chart library like Chart.js)</p>
   </div>
   
+  <div class="progress-summary">
+    <p>Workout Goal: <span>{{ workoutGoal }}</span></p>
+    <p>Current Progress: <span>{{ currentProgress }}</span></p>
+  </div>
+</div>

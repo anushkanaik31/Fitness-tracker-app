@@ -1,18 +1,46 @@
-<div class="workout-log">
-    <h2>Workout Log</h2>
-    <form>
-      <div class="workout-details">
-        <label for="workout-type">Workout Type</label>
-        <input id="workout-type" type="text" placeholder="Enter workout type">
-      </div>
-      <div class="workout-details">
-        <label for="workout-duration">Duration (minutes)</label>
-        <input id="workout-duration" type="number" placeholder="Enter duration">
-      </div>
-      <div class="workout-details">
-        <label for="calories-burned">Calories Burned</label>
-        <input id="calories-burned" type="number" placeholder="Enter calories burned">
-      </div>
-      <button class="submit-btn">Log Workout</button>
+<div class="workout-log-container">
+  <div class="card-container">
+    <h2>Log Your Workout</h2>
+    <p>Track your daily workout progress and log your exercises.</p>
+
+    <form class="log-entry-form">
+      <!-- Workout Type Field -->
+      <label for="workout-name">Workout Type:</label>
+      <select id="workout-name" [(ngModel)]="workoutType" name="workoutType">
+        <option value="running">Running</option>
+        <option value="cycling">Cycling</option>
+        <option value="swimming">Swimming</option>
+        <option value="aerobics">Aerobics</option>
+        <option value="pilates">Pilates</option>
+        <option value="zumba">Zumba</option>
+        <option value="yoga">Yoga</option>
+        <option value="stretch">Stretch</option>
+        <option value="weight-training">Weight Training</option>
+      </select>
+
+      <!-- Workout Duration Field -->
+      <label for="workout-duration">Duration (min):</label>
+      <input type="number" id="workout-duration" placeholder="Enter duration" [(ngModel)]="workoutDuration" name="workoutDuration" />
+
+      <!-- Intensity Field -->
+      <label for="workout-intensity">Intensity:</label>
+      <select id="workout-intensity" [(ngModel)]="workoutIntensity" name="workoutIntensity">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+
+      <!-- Log Workout Button -->
+      <button type="button" id="log-workout-btn" (click)="logWorkout()">Log Workout</button>
     </form>
-  </div>  
+  </div>
+</div>
+
+<!-- Workout Logged Popup (Initially Hidden) -->
+<div id="workout-logged-popup" class="workout-logged-popup" #workoutLoggedPopup>
+  <div class="popup-content">
+    <h2>Workout Logged!</h2>
+    <p>Your workout has been successfully logged.</p>
+    <button id="close-popup-btn" (click)="closePopup()">Ok</button>
+  </div>
+</div>
