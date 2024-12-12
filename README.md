@@ -11,7 +11,7 @@ Calorie Tracker: Add food items and their calorie count, and check total calorie
 Progress: Monitor progress toward your fitness goals.
 
 ![Home Page](assets/screenshots/home_page1.png)
-![Workout Log](assets/screenshots/me_page2.png)
+![Workout Log](assets/screenshots/home_page2.png)
 ![Workout Log](assets/screenshots/log_workout.png)
 ![Workout Log](assets/screenshots/log_workout_popup.png)
 ![Workout Log](assets/screenshots/steps_tracker.png)
