@@ -1,22 +1,35 @@
+<div class="hero-section">
+  <div class="image-container">
+    <img *ngFor="let image of images; let i = index" 
+         [src]="image" 
+         alt="Fitness Journey" 
+         class="hero-image" 
+         [ngClass]="{ 'active': currentImageIndex === i }" />
+  </div>
+  <div class="quote-overlay">
+    <h1>{{ currentQuote }}</h1>
+    <p>{{ currentQuoteText }}</p>
+  </div>
+</div>
+
 <div class="home-container">
-    <h2>Choose Your Fitness Tracker</h2>
-    <div class="component-options">
-      <div class="option-card">
-        <img src="assets/images/workout-log.jpg" alt="Workout Log" />
-        <a routerLink="/workout-log">Workout Log</a>
-      </div>
-      <div class="option-card">
-        <img src="assets/images/steps-tracker.jpg" alt="Steps Tracker" />
-        <a routerLink="/steps-tracker">Steps Tracker</a>
-      </div>
-      <div class="option-card">
-        <img src="assets/images/calorie-tracker.jpg" alt="Calorie Tracker" />
-        <a routerLink="/calorie-tracker">Calorie Tracker</a>
-      </div>
-      <div class="option-card">
-        <img src="assets/images/progress.jpg" alt="Progress" />
-        <a routerLink="/progress">Progress</a>
-      </div>
+  <h2>Choose Your Fitness Tracker</h2>
+  <div class="component-options">
+    <div class="option-card">
+      <img src="assets/images/workout-log.jpg" alt="Workout Log" class="option-image" />
+      <a routerLink="/workout-log" class="option-link">Workout Log</a>
+    </div>
+    <div class="option-card">
+      <img src="assets/images/steps-tracker.jpg" alt="Steps Tracker" class="option-image" />
+      <a routerLink="/steps-tracker" class="option-link">Steps Tracker</a>
+    </div>
+    <div class="option-card">
+      <img src="assets/images/calorie-tracker.jpg" alt="Calorie Tracker" class="option-image" />
+      <a routerLink="/calorie-tracker" class="option-link">Calorie Tracker</a>
+    </div>
+    <div class="option-card">
+      <img src="assets/images/progress.jpg" alt="Progress" class="option-image" />
+      <a routerLink="/progress" class="option-link">Progress</a>
     </div>
   </div>
-  
+</div>

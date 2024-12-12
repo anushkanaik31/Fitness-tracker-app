@@ -1,49 +1,30 @@
-.calorie-tracker {
-    max-width: 400px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .calorie-tracker h2 {
-    text-align: center;
-    font-size: 1.8rem;
-    color: #333;
-  }
-  
-  .calorie-details {
-    margin-bottom: 15px;
-  }
-  
-  .calorie-details label {
-    display: block;
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 5px;
-  }
-  
-  .calorie-details input {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .submit-btn {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 1.2rem;
-    cursor: pointer;
-  }
-  
-  .submit-btn:hover {
-    background-color: #45a049;
-  }
-  
+.calorie-tracker-container {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.calorie-tracker-container h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.calorie-tracker-progress {
+  width: 100%;
+  background-color: #e0e0e0;
+  height: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.calorie-tracker-progress .calories {
+  background-color: #ff5733;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.calorie-tracker-container p {
+  font-size: 16px;
+  color: #333;
+}
